@@ -1,0 +1,37 @@
+<!--IMAGEN DE ENCABEZADO-->
+<header class="bg-cover bg-center h-40 md:h-96" style="background-image: url('/assets/encabezado.png');">
+</header>
+
+<!--CONTENEDOR FRANGA AZUL-->
+<div class="bg-blue-900 my-2">
+  <!--HAMBUEGUESA-->
+  <div class="flex items-center justify-between px-4">
+    <button class="flex flex-col justify-center w-10 h-10 space-y-1.5 ml-4 md:hidden" (click)="toggleMenu()">
+      <span class="block w-6 h-0.5 bg-black"></span>
+      <span class="block w-6 h-0.5 bg-black"></span>
+      <span class="block w-6 h-0.5 bg-black"></span>
+    </button>
+ <!--MENU EN PANTALLA GRANDE-->
+    <div class="hidden md:flex space-x-4">
+      <a href="#enlace1" class="text-white hover:bg-blue-900 py-2 px-4 hover:bg-gray-900">Inicio</a>
+      <a href="#enlace2" class="text-white hover:bg-blue-900 py-2 px-4 hover:bg-gray-900">Quienes Somos</a>
+      <a href="#enlace3" class="text-white hover:bg-blue-900 py-2 px-4 hover:bg-gray-900">Oferta Académica</a>
+      <a href="#enlace4" class="text-white hover:bg-blue-900 py-2 px-4 hover:bg-gray-900">Admisisones</a>
+      <a href="#enlace5" class="text-white hover:bg-blue-900 py-2 px-4 hover:bg-gray-900">Actividades Extracurriculares</a>
+      <a href="#enlace6" class="text-white hover:bg-blue-900 py-2 px-4 hover:bg-gray-900">Experiencia Educativa</a>
+      <a href="#enlace7" class="text-white hover:bg-blue-900 py-2 px-4 hover:bg-gray-900">Servicios</a>
+      <a href="#enlace8" class="text-white hover:bg-blue-900 py-2 px-4 hover:bg-gray-900">Contactos</a>
+    </div>
+  </div>
+<!--MENU EN PANTALLA PEQUENA-->
+  <div *ngIf="menuVisible" class="md:hidden bg-blue-900">  
+    <a href="#enlace1" class="block text-white py-2 px-4 hover:bg-gray-600">Inicio</a>
+    <a href="#enlace2" class="block text-white py-2 px-4 hover:bg-gray-600">Quienes Somos</a>
+    <a href="#enlace3" class="block text-white py-2 px-4 hover:bg-gray-600">Oferta Académica</a>
+    <a href="#enlace4" class="block text-white py-2 px-4 hover:bg-gray-600">Admisiones</a>
+    <a href="#enlace5" class="block text-white py-2 px-4 hover:bg-gray-600">Actividades Extracurriculares</a>
+    <a href="#enlace6" class="block text-white py-2 px-4 hover:bg-gray-600">Experiencia Educativa</a>
+    <a href="#enlace7" class="block text-white py-2 px-4 hover:bg-gray-600">Servicios</a>
+    <a href="#enlace8" class="block text-white py-2 px-4 hover:bg-gray-600">Contactos</a>
+  </div>
+</div>
