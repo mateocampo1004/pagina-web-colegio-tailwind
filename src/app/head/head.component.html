@@ -35,3 +35,33 @@
     <a href="#enlace8" class="block text-white py-2 px-4 hover:bg-gray-600">Contactos</a>
   </div>
 </div>
+
+<!--CARRUSEL Y FLECHAS-->
+<div class="relative">
+  <div class="carousel-container carousel-container flex justify-center items-center">
+    <img [src]="images[currentImageIndex]" alt="Carousel image" class="object-contain max-h-full w-128">
+  </div>
+  <!--FLECHAS PARA CARRUSEL-->
+  <button (click)="prevSlide()" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-300 hover:bg-gray-400 rounded-full p-4">
+    &#9664;
+  </button>
+  <button (click)="nextSlide()" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-300 hover:bg-gray-400 rounded-full p-4">
+    &#9654;
+  </button>
+</div>
+
+<!--ICONOS REDES SOCIALES-->
+<div class="fixed top-1/2 right-1 transform -translate-y-1/2 flex flex-col items-center space-y-2">
+  <a href="https://facebook.com" target="_blank">
+    <img src="assets/facebook_icon.png" alt="Facebook" class="h-10 w-10">
+  </a>
+  <a href="https://whatsapp.com" target="_blank">
+    <img src="assets/whatsapp_icon.png" alt="Whatsapp" class="h-10 w-10">
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <img src="assets/instagram_icon.png" alt="Instagram" class="h-10 w-10">
+  </a>
+  <a href="https://tiktok.com" target="_blank">
+    <img src="assets/tiktok_icon.png" alt="TikTok" class="h-10 w-10">
+  </a>
+</div>
